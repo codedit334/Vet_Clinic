@@ -36,17 +36,17 @@ VALUES ('Pokemon'), ('Digimon');
 
 
 UPDATE animals
-   SET species_id = (SELECT id from species WHERE name = 'Digimon') -- Or you can hardcode the species_id here which I wouldn't recommend --
+   SET species_id = (SELECT id from species WHERE name = 'Digimon') 
    WHERE name like '%mon';
 
 UPDATE animals
    SET species_id = (SELECT id from species WHERE name = 'Pokemon')
    WHERE species_id IS NULL;
 
+
 UPDATE animals
  SET owner_id = (SELECT id from owners WHERE full_name = 'Sam Smith')
    WHERE name = 'Agumon';
--- With more animals  you may say for example--
 
 UPDATE animals
  SET owner_id = (SELECT id from owners WHERE full_name = 'Jennifer Orwell')
