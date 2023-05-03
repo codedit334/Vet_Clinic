@@ -57,7 +57,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Vet_Clinic] <a name="about-project"></a>
 
 This project involves creating a PostgreSQL database named vet_clinic with a table named animals and performing various SQL queries on it, such as filtering animals by name, date of birth, weight, and neutered status.
 
@@ -79,7 +79,6 @@ This project involves creating a PostgreSQL database named vet_clinic with a tab
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - Storing information about animals in a vet clinic.
 - Providing a user-friendly interface for adding, modifying, and querying animal data.
@@ -131,7 +130,6 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
@@ -145,7 +143,6 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
 
 - Appointment scheduling.
 - Medication tracking.
@@ -195,7 +192,7 @@ I would like to thank Microverse for giving me the opportunity to work in this p
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/codedit334/Vet_Clinic/blob/main/LICENSE licensed.
+This project is [MIT](https://github.com/codedit334/Vet_Clinic/blob/main/LICENSE) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
