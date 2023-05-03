@@ -35,42 +35,31 @@ INSERT INTO species (name)
 VALUES ('Pokemon'), ('Digimon');
 
 
-ALTER TABLE animals
-SET species_id = 2, owner_id = 1
-WHERE name = 'Agumon';
+UPDATE animals
+   SET species_id = (SELECT id from species WHERE name = 'Digimon') -- Or you can hardcode the species_id here which I wouldn't recommend --
+   WHERE name like '%mon';
 
-ALTER TABLE animals
-SET species_id = 2, owner_id = 2
-WHERE name = 'Gabumon';
+UPDATE animals
+   SET species_id = (SELECT id from species WHERE name = 'Pokemon')
+   WHERE species_id IS NULL;
 
-ALTER TABLE animals
-SET species_id = 1, owner_id = 2
-WHERE name = 'Pikachu';
+UPDATE animals
+ SET owner_id = (SELECT id from owners WHERE full_name = 'Sam Smith')
+   WHERE name = 'Agumon';
+-- With more animals  you may say for example--
 
-ALTER TABLE animals
-SET species_id = 2, owner_id = 3
-WHERE name = 'Devimon';
+UPDATE animals
+ SET owner_id = (SELECT id from owners WHERE full_name = 'Jennifer Orwell')
+  WHERE name = 'Gabumon' OR name = 'Pikachu';
 
-ALTER TABLE animals
-SET species_id = 1, owner_id = 3
-WHERE name = 'Plantmon';
+UPDATE animals
+ SET owner_id = (SELECT id from owners WHERE full_name = 'Bob')
+  WHERE name = 'Devimon' OR name = 'Plantmon';
 
-ALTER TABLE animals
-SET species_id = 1, owner_id = 4
-WHERE name = 'Charmander';
+  UPDATE animals
+ SET owner_id = (SELECT id from owners WHERE full_name = 'Melody Pond')
+  WHERE name = 'Charmander' OR name = 'Squirtle' OR name = 'Blossom';
 
-ALTER TABLE animals
-SET species_id = 1, owner_id = 4
-WHERE name = 'Squirtle';
-
-ALTER TABLE animals
-SET species_id = 1, owner_id = 4
-WHERE name = 'Blossom';
-
-ALTER TABLE animals
-SET species_id = 2, owner_id = 5
-WHERE name = 'Angemon';
-
-ALTER TABLE animals
-SET species_id = 1, owner_id = 5
-WHERE name = 'Boarmon';
+UPDATE animals
+ SET owner_id = (SELECT id from owners WHERE full_name = 'Dean Winchester')
+  WHERE name = 'Angemon' OR name = 'Boarmon';
