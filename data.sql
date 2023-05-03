@@ -17,4 +17,60 @@ VALUES ('Charmander', '2020-02-08', -11, false, 0, ''),
        ('Boarmon', '2005-06-07', 20.4, true, 7, ''),
        ('Blossom', '1998-10-13', 17, true, 3, ''),
        ('Ditto', '2022-05-14', 22, true, 4, '');
-       
+
+
+-- Project 3
+
+INSERT INTO owners (full_nam, age)
+VALUES 
+('Sam Smith', 34),
+('Jennifer Orwell', 19),
+('Bob', 45),
+('Melody Pond', 77),
+('Dean Winchester', 14),
+('Jodie Whittaker', 38);
+
+
+INSERT INTO species (name)
+VALUES ('Pokemon'), ('Digimon');
+
+
+ALTER TABLE animals
+SET species_id = 2, owner_id = 1
+WHERE name = 'Agumon';
+
+ALTER TABLE animals
+SET species_id = 2, owner_id = 2
+WHERE name = 'Gabumon';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 2
+WHERE name = 'Pikachu';
+
+ALTER TABLE animals
+SET species_id = 2, owner_id = 3
+WHERE name = 'Devimon';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 3
+WHERE name = 'Plantmon';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 4
+WHERE name = 'Charmander';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 4
+WHERE name = 'Squirtle';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 4
+WHERE name = 'Blossom';
+
+ALTER TABLE animals
+SET species_id = 2, owner_id = 5
+WHERE name = 'Angemon';
+
+ALTER TABLE animals
+SET species_id = 1, owner_id = 5
+WHERE name = 'Boarmon';
