@@ -39,7 +39,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -83,15 +82,6 @@ This project involves creating a PostgreSQL database named vet_clinic with a tab
 - Storing information about animals in a vet clinic.
 - Providing a user-friendly interface for adding, modifying, and querying animal data.
 - Generating reports or summaries based on the animal data.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Comming soon](#live-demo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
